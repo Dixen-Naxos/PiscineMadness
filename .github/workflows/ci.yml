@@ -7,7 +7,7 @@ env:
 jobs:
   build:
     name: Build docker image
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Set up Docker Buildx
@@ -27,6 +27,7 @@ jobs:
   redeploy:
     needs: build
     name: Redeploy
+    runs-on: ubuntu-latest
     uses: appleboy/ssh-action@v1.0.0
     with:
       host: ${{ secrets.SERVER_HOSTNAME }}
