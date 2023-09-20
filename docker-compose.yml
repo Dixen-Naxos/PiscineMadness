@@ -1,0 +1,7 @@
+version: "3"
+services:
+  front:
+    container_name: "piscine"
+    image: dixennaxos/projects:piscine
+    restart: "always"
+    tty: true
