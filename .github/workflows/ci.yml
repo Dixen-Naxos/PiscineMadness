@@ -1,5 +1,9 @@
 name: FRONT
 
+on:
+  push:
+    branches: [ "main" ]
+
 env:
   CARGO_TERM_COLOR: always
   BRANCH_NAME: ${{github.ref_name}}
