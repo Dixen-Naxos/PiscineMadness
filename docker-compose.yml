@@ -5,3 +5,5 @@ services:
     image: dixennaxos/projects:piscine
     restart: "always"
     tty: true
+    ports:
+      - '4173:4173'
