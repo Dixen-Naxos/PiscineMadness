@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Image from "@/components/Image.vue";
 
-const randomNumber = Math.floor(Math.random() * 10);
+const randomNumber = Math.floor(Math.random() * 299);
 
 const reloadView = () => {
   window.location.reload();
